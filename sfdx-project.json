@@ -1,55 +1,65 @@
 {
-  "packageDirectories": [
-    {
-      "path": "./es-base-objects",
-      "package": "ESObjects",
-      "versionName": "Base Objects v1",
-      "versionNumber": "1.0.0.NEXT",
-      "default": false
-    },
-    {
-      "path": "./es-base-styles",
-      "package": "ESBaseStyles",
-      "versionName": "Base Styles v1",
-      "versionNumber": "1.0.0.NEXT",
-      "default": false
-    },
-    {
-      "path": "./es-base-code",
-      "package": "ESBaseCode",
-      "versionName": "Base Code v1",
-      "versionNumber": "1.0.0.NEXT",
-      "default": false,
-      "dependencies": [
+    "packageDirectories": [
         {
-          "package": "ESObjects",
-          "versionNumber": "1.0.0.LATEST"
-        }
-      ]
-    },
-    {
-      "path": "./es-space-mgmt",
-      "default": true,
-      "package": "ESSpaceMgmt",
-      "versionName": "ESSpaceMgmt v1",
-      "versionNumber": "1.0.0.NEXT",
-      "dependencies": [
-        {
-          "package": "ESObjects",
-          "versionNumber": "1.0.0.LATEST"
+            "path": ".\\es-base-objects",
+            "package": "ESObjects",
+            "versionName": "Base Objects v1",
+            "versionNumber": "1.0.0.NEXT",
+            "default": false
         },
         {
-          "package": "ESBaseCode",
-          "versionNumber": "1.0.0.LATEST"
+            "path": ".\\es-base-styles",
+            "package": "ESBaseStyles",
+            "versionName": "Base Styles v1",
+            "versionNumber": "1.0.0.NEXT",
+            "default": false
         },
         {
-          "package": "ESBaseStyles",
-          "versionNumber": "1.0.0.LATEST"
+            "path": ".\\es-base-code",
+            "package": "ESBaseCode",
+            "versionName": "Base Code v1",
+            "versionNumber": "1.0.0.NEXT",
+            "default": false,
+            "dependencies": [
+                {
+                    "package": "ESObjects",
+                    "versionNumber": "1.0.0.LATEST"
+                }
+            ]
+        },
+        {
+            "path": ".\\es-space-mgmt",
+            "default": true,
+            "package": "ESSpaceMgmt",
+            "versionName": "ESSpaceMgmt v1",
+            "versionNumber": "1.0.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "ESObjects",
+                    "versionNumber": "1.0.0.LATEST"
+                },
+                {
+                    "package": "ESBaseCode",
+                    "versionNumber": "1.0.0.LATEST"
+                },
+                {
+                    "package": "ESBaseStyles",
+                    "versionNumber": "1.0.0.LATEST"
+                }
+            ]
         }
-      ]
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "49.0",
+    "packageAliases": {
+        "ESObjects": "0Ho6F000000k9hfSAA",
+        "ESObjects@1.0.0-1": "04t6F000000cgbpQAA",
+        "ESBaseStyles": "0Ho6F000000k9hkSAA",
+        "ESBaseStyles@1.0.0-1": "04t6F000000cgbuQAA",
+        "ESBaseCode": "0Ho6F000000k9hpSAA",
+        "ESBaseCode@1.0.0-1": "04t6F000000cgbzQAA",
+        "ESSpaceMgmt": "0Ho6F000000k9huSAA",
+        "ESSpaceMgmt@1.0.0-1": "04t6F000000cgc4QAA"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "49.0"
 }
